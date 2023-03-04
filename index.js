@@ -41,10 +41,11 @@ console.log(moreFiveElements.length);
 // 4. Obtenga el primer elemento, el elemento del medio y el último elemento de un array.
 let firstElement = moreFiveElements[0];
 let lastElement = moreFiveElements[moreFiveElements.length - 1];
-let middleElement = moreFiveElements[3];
+let middleElement = moreFiveElements[(moreFiveElements.length) / 2];
 
 // 5. Declara un array llamado _mixedDataTypes_, coloque diferentes tipos de datos en el array y encuentre la longitud del array. El tamaño del array debe ser mayor que 5.
 let _mixedDataTypes = [1, 3, 10, "banana", "tomato", "bread"];
+console.log(_mixedDataTypes.length);
 console.log(_mixedDataTypes);
 
 // 6. Declare un variable array de nombre _itCompanies_ y asignarles valores iniciales Facebook, Google, Microsoft, Apple, IBM, Oracle y Amazon.
@@ -59,7 +60,7 @@ console.log(_itCompanies_.length);
 // 9. Imprime la primer empresa , la intermedia y la última empresa
 console.log(_itCompanies_[0]);
 console.log(_itCompanies_[_itCompanies_.length - 1]);
-console.log(_itCompanies_[3]);
+console.log(_itCompanies_[Math.ceil(_itCompanies_.length / 2)]);
 
 // 10. Imprime cada empresa.
 console.log(_itCompanies_);
