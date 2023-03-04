@@ -128,7 +128,7 @@ console.log(invertedList);
 // _itCompanies_.splice(4, 3);
 
 // 19. Cortar la empresa o empresas intermedias de TI del array
-_itCompanies_.splice(2, 3);
+_itCompanies_.splice(_itCompanies_.length / 2, 1);
 
 // 20. Eliminar la primera empresa de TI del array
 _itCompanies_.shift();

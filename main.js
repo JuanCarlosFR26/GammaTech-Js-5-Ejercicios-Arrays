@@ -3,9 +3,8 @@ import { webTechs } from "./web_tech.js";
 
 // 4. En el array de países, verifique si 'Ethiopia' existe en el array si existe, imprima 'ETHIOPIA'. Si no existe agregar a la lista de países.
 
-if(countries.includes('Ethiopia')) {
-    console.log(countries.indexOf('Ethiopia'))
-    console.log(countries[57].toString().toUpperCase());
+if(countries.includes('Ethiopia') === true) {
+    console.log('ETHIOPIA');
 } else {
   countries.push('Ethiopia');
 }
