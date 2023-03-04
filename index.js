@@ -227,6 +227,7 @@ let ageRange = maxAge - minAge;
 //         - Compare el valor de (mín - promedio) y (máx - promedio), use el método _abs()_
 let minMedian = Math.abs(Math.round(minAge - medianAge));
 let maxMedian = Math.abs(Math.round(maxAge - medianAge));
+console.log(minMedian === maxMedian);
 
 // 2. Cortar los diez primeros países de la [array de países](./arrays/countries.js)
 // Realizado en main.js
