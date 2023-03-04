@@ -66,9 +66,20 @@ console.log(_itCompanies_[Math.ceil(_itCompanies_.length / 2)]);
 console.log(_itCompanies_);
 
 // 11. Cambie el nombre de cada empresa a mayúsculas uno por uno e imprímalos.
-let upperIt = _itCompanies_.toString().toUpperCase();
-let upperItList = upperIt.split(',');
-console.log(upperItList);
+let face = _itCompanies_[0].toString().toUpperCase();
+let goo = _itCompanies_[1].toString().toUpperCase();
+let micr = _itCompanies_[2].toString().toUpperCase();
+let app = _itCompanies_[3].toString().toUpperCase();
+let ibm = _itCompanies_[4].toString().toUpperCase();
+let ora = _itCompanies_[5].toString().toUpperCase();
+let amz = _itCompanies_[6].toString().toUpperCase();
+console.log(face);
+console.log(goo);
+console.log(micr);
+console.log(app);
+console.log(ibm);
+console.log(ora);
+console.log(amz);
 
 // 12. Imprime el array como una oración: Facebook, Google, Microsoft, Apple, IBM, Oracle y Amazon son grandes empresas de TI.
 let strIt = _itCompanies_.join(', ');
@@ -226,8 +237,8 @@ let medianAge = (ages[0] + ages[1] + ages[2] + ages[3] + ages[4] + ages[5] + age
 let ageRange = maxAge - minAge;
 
 //         - Compare el valor de (mín - promedio) y (máx - promedio), use el método _abs()_
-let minMedian = Math.abs(Math.round(minAge - medianAge));
-let maxMedian = Math.abs(Math.round(maxAge - medianAge));
+let minMedian = Math.abs(minAge - medianAge);
+let maxMedian = Math.abs(maxAge - medianAge);
 console.log(minMedian === maxMedian);
 
 // 2. Cortar los diez primeros países de la [array de países](./arrays/countries.js)
