@@ -95,22 +95,8 @@ if(exists) {
 }
 
 // 14. Filtre las empresas que tienen más de una 'o' sin el método _filter()_
-let cmp1 =_itCompanies_[0].toString().toLowerCase();
-let cmp2 =_itCompanies_[1].toString().toLowerCase();
-let cmp3 =_itCompanies_[2].toString().toLowerCase();
-let cmp4 =_itCompanies_[3].toString().toLowerCase();
-let cmp5 =_itCompanies_[4].toString().toLowerCase();
-let cmp6 =_itCompanies_[5].toString().toLowerCase();
-let cmp7 =_itCompanies_[6].toString().toLowerCase();
-
-let pattern = /o{2}|.o.o/;
-console.log(pattern.test(cmp1))
-console.log(pattern.test(cmp2))
-console.log(pattern.test(cmp3))
-console.log(pattern.test(cmp4))
-console.log(pattern.test(cmp5))
-console.log(pattern.test(cmp6))
-console.log(pattern.test(cmp7))
+let noFilter = _itCompanies_.toString();
+console.log(filter.match(/[a-zA-Z]{1,6}?.o.o?[a-zA-Z]{1,6}/g));
 
 
 // 15. Ordene el array usando el método _sort()_
